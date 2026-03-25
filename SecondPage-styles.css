@@ -1,0 +1,209 @@
+body{
+        background-image:url("profilePictures/darkBlue-background.jpg");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:center;
+        background-size:cover;
+        background-color:rgb(29, 68, 175);
+        color:white;
+    }
+    .profile-class{
+        position:relative;
+        left:50%;
+        right:50%;
+        transform:translateX(-50%);
+    
+        height:52vh;
+        width:22vw;
+        
+    }
+    .profile-class img{
+        height:100%;
+        width:100%;
+        object-fit:contain;
+        border:none;
+        border-radius:4px;
+        background-image:conic-gradient(rgb(212, 81, 212),rgb(87, 7, 235),rgb(35, 35, 187),rgb(42, 177, 42),rgb(202, 202, 37),brown);
+        padding:5px;
+        animation:borders 1.5s infinite ,profilemovement 10s 1;
+        z-index:2;
+        
+    }
+    @keyframes borders{
+        25%{
+
+            background-image:conic-gradient(brown,rgb(212, 81, 212),rgb(87, 7, 235),rgb(35, 35, 187),rgb(42, 177, 42),rgb(202, 202, 37));
+
+        }
+        50%{
+            background-image:conic-gradient(rgb(202, 202, 37),brown,rgb(212, 81, 212),rgb(87, 7, 235),rgb(35, 35, 187),rgb(42, 177, 42));
+
+        }
+        75%{
+            background-image:conic-gradient(rgb(42, 177, 42),rgb(202, 202, 37),brown,rgb(212, 81, 212),rgb(87, 7, 235),rgb(35, 35, 187));
+        }
+        90%{
+            background-image:conic-gradient(rgb(35, 35, 187),rgb(42, 177, 42),rgb(202, 202, 37),brown,rgb(212, 81, 212),rgb(87, 7, 235));
+
+        }
+    }
+     @keyframes profilemovement{
+        0%{
+            transform:translateX(0);
+        }
+        50%{
+            transform:translateX(-100%);
+        }
+        100%{
+            transform:translateX(0);
+        }
+    }
+    .profile-class p{
+        position:absolute;
+        top:45%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        color:white;
+        font-size:35px;
+        font-family:"Dancing Script";
+        z-index:0;
+        text-align:center;
+        object-position:contain;
+        margin:0px;
+        
+    }
+    @media (max-width:900px){
+        .profile-class p{
+            font-size:20px;
+            top:25%;
+           }
+    }
+    .profile-class div{
+        transition:transform 3s;
+        position:relative;
+        z-index:2;
+
+    }
+    .profile-class div:hover{
+        transform:translateX(-100%);
+
+    }
+    .about-class{
+        margin-top:25px;
+        margin-left:45px;
+        padding:10px;
+        width:60vw;
+         background-image:url("profilePictures/darkBlue-background.jpg");
+        background-repeat:no-repeat;
+        background-attachment:center;
+        background-size:cover;
+        border-radius:3px;
+        border:5px solid;
+       
+        animation:AboutBorder 10s ease-in infinite;
+        
+    }
+    @keyframes AboutBorder{
+        0%{
+        border-top-color:darkblue;
+        border-left-color:darkblue;
+        border-bottom-color:aqua;
+        border-right-color:aqua;
+        }
+        50%{
+        border-bottom-color:darkblue;
+        border-right-color:darkblue;
+        border-top-color:aqua;
+        border-left-color:aqua;
+        }
+        100%{
+        border-top-color:darkblue;
+        border-left-color:darkblue;
+        border-bottom-color:aqua;
+        border-right-color:aqua;
+        }
+    }
+    .about-class p{
+        font-size:24px;
+        font-family:Montserrat;
+        object-position:contain;
+    }
+    .about-class h1{
+        color:rgb(207, 145, 10);
+    }
+    .list-class li{
+        font-size:24px;
+        font-family:Montserrat;
+        color:white;
+    }
+    .misaligned-class{
+        display:flex;
+        justify-content:end
+    }
+    .misaligned-class div{
+        margin-right:30px;
+    }
+    .certificate{
+        display:flex;
+        flex-direction:column;
+        
+        width:600px;
+    
+        
+    }
+    .certificate{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+       
+        
+    }
+    .certificate img{
+        width:100%;
+        
+        
+    }
+    .certificate-1{
+        
+        width:100%;
+        
+        
+    }
+    .certificate div{
+        width:600px;
+        height:550px;
+        
+    }
+    .certificate h1{
+        margin:10px 0px;
+        font-family:"Montserrat";
+        padding:0;
+        
+    }
+    .outerbox-class{
+        border:5px solid;
+        
+         margin:20px;
+        animation:outerbox-class 5s  ease-in infinite;
+    }
+    @keyframes outerbox-class{
+        from{
+            border-top-color:rgb(190, 57, 57);
+        border-right-color:rgb(190, 57, 57);
+        border-left-color:rgb(192, 96, 52);
+        border-bottom-color:rgb(192, 108, 29);
+        }
+        to{
+        border-bottom-color:rgb(190, 57, 57);
+        border-left-color:rgb(190, 57, 57);
+        border-right-color:rgb(192, 96, 52);
+        border-top-color:rgb(192, 108, 29);
+        }
+    }
+
+    .certificatename-class{
+        font-size:35px;
+        font-family:Montserrat;
+        color:gold;
+        margin:20px 20px;
+    }

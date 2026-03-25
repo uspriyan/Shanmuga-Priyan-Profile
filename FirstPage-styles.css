@@ -1,0 +1,105 @@
+
+            body{
+                background-color:rgb(153, 0, 255);
+                background-image:url("profilePictures/thumb-1920-1205623.jpg");
+                background-position:center center;
+                background-repeat: no-repeat;
+                background-attachment:fixed;
+                background-size:cover;
+                
+            }
+            *{
+                padding:0px;
+                margin:0px;
+
+            }
+            .window{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                width:80vw;
+                
+                overflow:hidden;
+
+            }
+            .wrapper{
+                display:flex;
+                height:100%;
+                align-items:center;
+                transform:translate(54%);
+                animation:myslide 3s 1;
+                transition:transform 5s;
+                
+            }
+            @keyframes myslide{
+               0%{
+                transform:translate(100%);
+               }
+               100%{
+                transform:translate(54%);
+                
+               }
+            }
+            .wrapper:hover{
+                transform:translate(0);
+
+            }
+            
+            
+            a{
+                text-decoration:none;
+                font-size: 45px;
+                font-family:arial;
+                color:white;
+                border: 1px solid white;
+                padding:5px;
+                border-radius:5px;
+                text-align:center;
+            }
+            a:hover{
+                border-color:black;
+                color:black;
+            }
+            .wrapper div{
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                margin-left:18%;
+            }
+            .wrapper img{
+                
+                border-radius:50%;
+                cursor:pointer;
+                width:35%;
+                border:solid;
+                border-top-color:rgb(177, 131, 7);
+                border-bottom-color:rgba(228, 231, 37, 0.555);
+                border-left-color:rgb(218, 106, 32);
+                border-right-color:rgb(214, 136, 46);
+                border-width:6px;
+                box-shadow:10px 25px 12p gray;
+                transition:transform 3s;
+                transform:rotate(-1turn);
+            }
+            .wrapper img:hover{
+            animation:rotation 4s 1;
+
+            }
+            @keyframes rotation{
+                from{
+                    transform:rotate(0);
+                }
+                to{
+                    transform:rotate(-1turn);
+                }
+            }
+            .wrapper p{
+                font-size:45px;
+                font-family:Arial;
+                color:gold;
+                padding-bottom:80px;
+                font-weight:bold;
+
+            }
+    

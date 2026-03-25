@@ -1,5 +1,5 @@
 body{
-        background-image:url("profilePictures/darkBlue-background.jpg");
+        background-image:url("darkBlue-background.jpg");
         background-repeat:no-repeat;
         background-attachment:fixed;
         background-position:center;
@@ -93,7 +93,7 @@ body{
         margin-left:45px;
         padding:10px;
         width:60vw;
-         background-image:url("profilePictures/darkBlue-background.jpg");
+         background-image:url("darkBlue-background.jpg");
         background-repeat:no-repeat;
         background-attachment:center;
         background-size:cover;
